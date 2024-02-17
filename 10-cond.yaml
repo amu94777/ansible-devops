@@ -12,6 +12,11 @@
 
   - name: print the status
     ansible.builtin.debug:
-      msg: the status of user is{{user.rc}}
-      
-          
+      msg: the status of user is {user.rc}}
+
+  - name: creating roboshop user
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0      
+
+
