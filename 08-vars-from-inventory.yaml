@@ -2,6 +2,6 @@
   hosts: localhost
  
   tasks:
-  - name: using variables and their values
+  - name: using variables and their values from inventory
     ansible.builtin.debug:
       msg: "i am learing {{course}} with the {{trainer}} and the duration is {{duration}}"
