@@ -3,4 +3,4 @@
   tasks:
   - name: providing values to variables from commandline
     ansible.builtin.debug:
-      msg: "hello {{PERSON}} good {{WISHES}}
+      msg: "hello {{PERSON}} good {{WISHES}}"
