@@ -4,3 +4,7 @@
   - name: using a shell command
     ansible.builtin.command: ps -ef
     register: output
+    
+  - name: output of  shell command
+    ansible.builtin.debug: 
+      msg: "the msg is {{output}}"
