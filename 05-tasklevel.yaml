@@ -1,0 +1,12 @@
+- name: playbook for variables
+  hosts: localhost
+  vars:
+    course: "devops"
+    trainer: "shivakumar"
+    duration: "3months"
+  tasks:
+  - name: using variables and their values
+    vars:
+      course: "devops with aws"
+    ansible.builtin.debug:
+      msg: "i am learing {{course}} with the {{trainer}} and the duration is {{duration}}"
