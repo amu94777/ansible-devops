@@ -1,0 +1,7 @@
+- name: playbook for variables
+  hosts: localhost
+ 
+  tasks:
+  - name: using variables and their values
+    ansible.builtin.debug:
+      msg: "i am learing {{course}} with the {{trainer}} and the duration is {{duration}}"
