@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
   - name: using a shell command
-    ansible.builtin.debug: ls -al
+    ansible.builtin.command: ls -al
     register: output
