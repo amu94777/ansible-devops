@@ -15,7 +15,7 @@
         name: "{{item.name}}"
         state: "{{item.state}}"
       loop:
-      - { name:'git', state:'present' }
-      - { name:'maven', state:'present' }
+      - { name: 'git', state: 'present' }
+      - { name: 'maven', state: 'present' }
     
       
