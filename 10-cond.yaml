@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: using a shell command
-    ansible.builtin.command: ps -ef
+    ansible.builtin.command: ls
     register: output
     
   - name: output of  shell command
