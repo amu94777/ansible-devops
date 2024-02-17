@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
   - name: using a shell command
-    ansible.builtin.command: ls -al
+    ansible.builtin.command: ps -ef
     register: output
