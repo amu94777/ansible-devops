@@ -9,6 +9,6 @@
 
 
    - name: staring nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started
+     ansible.builtin.service:
+       name: nginx
+       state: started
