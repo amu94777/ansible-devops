@@ -8,7 +8,7 @@
       state: present 
 
 
-   - name: staring nginx
-     ansible.builtin.service:
-       name: nginx
-       state: started
+  - name: staring nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
