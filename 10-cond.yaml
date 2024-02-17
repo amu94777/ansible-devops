@@ -1,10 +1,10 @@
 - name: using shell commands in ansible
   hosts: localhost
   tasks:
-  - name: using a shell command
-    ansible.builtin.command: ls
-    register: output
-    
-  - name: output of  shell command
+  - name: checking roboshop user exist or not
+    ansible.builtin.command: id roboshop
+    register: user
+
+  - name: print the user
     ansible.builtin.debug: 
-      msg: "the msg is {{output}}"
+      msg: the output of user is {{user}} 
