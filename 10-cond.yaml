@@ -1,0 +1,6 @@
+- name: using shell commands in ansible
+  hosts: localhost
+  tasks:
+  - name: using a shell command
+    ansible.builtin.debug: ls -al
+    register: output
