@@ -9,3 +9,9 @@
   - name: print the user
     ansible.builtin.debug: 
       msg: the output of user is {{user}} 
+
+  - name: print the status
+    ansible.builtin.debug:
+      msg: the status of user is{{user.rc}}
+      
+          
